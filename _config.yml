@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://clovertuan.github.io
-root: /
+url: https://esappear.github.io
+root: /clover/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -80,6 +80,6 @@ theme: clover
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:CloverTuan/clovertuan.github.io.git
+  repo: git@github.com:esappear/clover.git
   branch: master
 

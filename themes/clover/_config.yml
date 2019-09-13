@@ -28,8 +28,7 @@ copyright: All rights reserved @Clover Tuan
 menu:
   # Project: /
   Blog: /
-  #Archive: /categories
-  Portfolio: /resume
+  Archive: /archives
   About: /about
 
 # Specific default categories or tags of home page.
