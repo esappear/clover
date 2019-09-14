@@ -1,5 +1,5 @@
 # Clover
-## [Preview](https://clovertuan.github.io)
+## [Preview](https://esappear.github.io/clover/)
 ![preview](https://media.githubusercontent.com/avatars/8626321?orig=1&token=ANM6mziZ-bdE9fPaDWu1LVN0JQ-Vz-k_ks5b0I9FwA%3D%3D)
 
 ## Prerequisite
@@ -113,4 +113,11 @@ card_style:
   archive: article-card
   tag: article-card
   category: article-card
+```
+
+### Code Highlight
+You should disable the default highlight setting in `.config.yml` and then get gihub-style code highlight powered by `hight.js`.
+```
+highlight:
+  enable: false
 ```
