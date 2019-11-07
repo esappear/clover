@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>代码高亮和表格效果测试 | Clover Tuan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Code Highlightjs// 大数相加 function add(n1, n2) {   const a1 = n1.split(&amp;#39;&amp;#39;).reverse();   const a2 = n2.split(&amp;#39;&amp;#39;).reverse();   const result = [];   for (let i = 0, l = Math.max(a1.length,">
+<meta name="keywords" content="test">
+<meta property="og:type" content="article">
+<meta property="og:title" content="代码高亮和表格效果测试">
+<meta property="og:url" content="https://esappear.github.io/2019/09/14/code-highlight/index.html">
+<meta property="og:site_name" content="Clover Tuan">
+<meta property="og:description" content="Code Highlightjs// 大数相加 function add(n1, n2) {   const a1 = n1.split(&amp;#39;&amp;#39;).reverse();   const a2 = n2.split(&amp;#39;&amp;#39;).reverse();   const result = [];   for (let i = 0, l = Math.max(a1.length,">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://esappear.github.io/2019/09/14/code-highlight/images/highlight.png">
+<meta property="og:updated_time" content="2019-11-07T14:35:38.892Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="代码高亮和表格效果测试">
+<meta name="twitter:description" content="Code Highlightjs// 大数相加 function add(n1, n2) {   const a1 = n1.split(&amp;#39;&amp;#39;).reverse();   const a2 = n2.split(&amp;#39;&amp;#39;).reverse();   const result = [];   for (let i = 0, l = Math.max(a1.length,">
+<meta name="twitter:image" content="https://esappear.github.io/2019/09/14/code-highlight/images/highlight.png">
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="/clover/css/index.css">
+</head>
+</html>
+<body style="
+
+
+  background-color: #eff0f6
+
+">
+  <div id="container">
+    <nav id="nav">
+  <header class="header">
+    <a href="/clover/" class="title">Clover Tuan</a>
+  </header>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+        
+          
+            <a href="https://dribbble.com/clovertuan" target="_blank" class="nav-icn iconfont icon-dribbble"></a>
+          
+        
+          
+            <a href="https://www.behance.net/clovertuan" target="_blank" class="nav-icn iconfont icon-behance"></a>
+          
+        
+          
+            <a href="http://clovertuan.lofter.com/" target="_blank" class="nav-icn iconfont icon-lofter"></a>
+          
+        
+          
+            <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn iconfont icon-instagram"></a>
+          
+        
+          
+            <a href="https://github.com/cloverTuan" target="_blank" class="nav-icn iconfont icon-github"></a>
+          
+        
+      
+    </div>
+    <div class="menu">
+      
+        
+            <a href="/clover/" class="nav-menu ">HOME</a>
+          
+        
+            <a href="/clover/archives" class="nav-menu ">ARCHIVE</a>
+          
+        
+            <a href="/clover/about" class="nav-menu ">ABOUT</a>
+          
+        
+      
+    </div>
+  </div>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title">代码高亮和表格效果测试</h2>
+  <p class="sub">Sep 14, 2019</p>
+  <article class="content">
+    <h1 id="Code-Highlight"><a href="#Code-Highlight" class="headerlink" title="Code Highlight"></a>Code Highlight</h1><h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><pre><code class="js">// 大数相加
+function add(n1, n2) {
+  const a1 = n1.split(&#39;&#39;).reverse();
+  const a2 = n2.split(&#39;&#39;).reverse();
+  const result = [];
+  for (let i = 0, l = Math.max(a1.length, a2.length); i &lt; l; i++) {
+    result[i] = (result[i] || 0) + parseInt(a1[i] || 0) + parseInt(a2[i] || 0);
+    while (result[i] &gt;= 10) {
+      result[i] -= 10;
+      result[i + 1] = (result[i + 1] || 0) + 1;
+    }
+  }
+  return result.reverse().join(&#39;&#39;);
+}
+</code></pre>
+<h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;script type=&#39;application/javascript&#39; src=&#39;/path/to/fastclick.js&#39;&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><pre><code class="css">div {
+  color: red;
+  background-color: gray;
+}
+</code></pre>
+<h2 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h2><pre><code class="bash">git clone https://github.com/esappear/hexo-theme-clover themes/clover
+</code></pre>
+<h1 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h1><table>
+<thead>
+<tr>
+<th>TEST</th>
+<th>TEST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>what</td>
+<td>what</td>
+</tr>
+<tr>
+<td>what</td>
+<td>what</td>
+</tr>
+<tr>
+<td>what</td>
+<td>what</td>
+</tr>
+<tr>
+<td>what</td>
+<td>what</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+  <footer class="f-cf">
+    
+    
+      <a href="/clover/2018/09/04/yanxi/" class="link f-fr">我画延禧⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  d.guangying@foxmail.com
+  
+    
+      
+        · <a href="https://dribbble.com/clovertuan" target="_blank" class="nav-icn">Dribbble</a>
+      
+    
+      
+        · <a href="https://www.behance.net/clovertuan" target="_blank" class="nav-icn">Behance</a>
+      
+    
+      
+        · <a href="http://clovertuan.lofter.com/" target="_blank" class="nav-icn">Lofter</a>
+      
+    
+      
+        · <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn">Instagram</a>
+      
+    
+      
+        · <a href="https://github.com/cloverTuan" target="_blank" class="nav-icn">GitHub</a>
+      
+    
+  
+  <span class="copyright">All rights reserved @Clover Tuan</span>
+</footer>
+  </div>
+</body>
+</html>
